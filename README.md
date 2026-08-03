@@ -71,6 +71,18 @@ python -m agent_runtime_eval.cli examples/injected_trace.json
 
 Simple lexical similarity is not a reliable measure of goal fidelity. For example, “write the final report” may be a valid subgoal even if it shares few words with “prioritize software vulnerabilities.” The first baseline therefore combines explicit scenario labels with transparent tool, resource, progress, and privilege rules. Later versions will compare semantic and model-based goal-fidelity evaluators.
 
+## Current Experimental Work
+
+A security-focused prototype explores tool use in AI agents, including:
+
+- application-side validation of tool requests and arguments,
+- requested, executed, blocked, and failed tool events,
+- trusted, compromised, and conflicting evidence,
+- expected versus observed tool selection.
+
+The prototype uses Anthropic’s tool-use API under `frontier-ai/anthropic_lab/05_tools/`.
+Future work may integrate these tool-use events into the model-agnostic runtime event format used by the core evaluator.
+
 ## Research Roadmap
 
 - [x] Structured trace schema
@@ -84,7 +96,9 @@ Simple lexical similarity is not a reliable measure of goal fidelity. For exampl
 - [ ] Real agent adapter
 - [ ] Prompt-injection and retrieval-poisoning scenarios
 - [ ] Adaptive adversarial evaluation
-- [ ] Tool-use and memory-integrity signals
+- [x] Tool-use evaluation prototype
+- [ ] Integrate tool-use signals into the runtime evaluator
+- [ ] Memory-integrity evaluation
 
 ## Limitations
 
