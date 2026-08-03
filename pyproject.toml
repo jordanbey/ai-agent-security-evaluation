@@ -13,7 +13,17 @@ authors = [{name = "Jordan Alexander"}]
 dependencies = []
 
 [project.optional-dependencies]
-dev = ["pytest>=8.0", "ruff>=0.5"]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.5",
+]
+
+agents = [
+    "langchain>=1.0,<2.0",
+    "langchain-anthropic>=1.0,<2.0",
+    "langgraph>=1.0,<2.0",
+    "python-dotenv>=1.0",
+]
 
 [project.scripts]
 agent-runtime-eval = "agent_runtime_eval.cli:main"
