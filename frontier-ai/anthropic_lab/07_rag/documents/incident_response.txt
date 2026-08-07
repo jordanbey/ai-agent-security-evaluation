@@ -1,0 +1,3 @@
+Security incidents should be reported immediately.
+The incident response team investigates high-risk alerts.
+Evidence should be preserved before remediation begins.

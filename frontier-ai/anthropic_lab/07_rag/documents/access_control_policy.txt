@@ -1,0 +1,23 @@
+Access Control Policy
+
+All employees must use individual user accounts. Shared accounts are prohibited unless specifically approved for operational requirements.
+
+Access should follow the principle of least privilege. Users should receive only the permissions necessary to perform their assigned duties.
+
+Administrative privileges require manager approval and security team authorization. Administrative accounts must never be used for normal office work, web browsing, or email.
+
+Multi-factor authentication is mandatory for remote access, privileged accounts, and access to sensitive systems.
+
+Managers must review employee permissions every three months. Any unnecessary permissions should be removed immediately.
+
+When employees transfer to another department, their access rights must be reviewed and adjusted to match their new responsibilities.
+
+When employment ends, all logical access must be disabled immediately. Active sessions, API keys, VPN access, physical access cards, and authentication tokens must be revoked as soon as possible.
+
+Service accounts must have a documented owner, a documented purpose, and regularly rotated credentials.
+
+Security teams should monitor repeated authentication failures, privilege escalation attempts, unusual login locations, and unexpected administrator activity.
+
+All access requests and approvals should be documented and retained for audit purposes.
+
+Periodic access reviews help ensure compliance with organizational security policies and regulatory requirements.

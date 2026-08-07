@@ -1,0 +1,3 @@
+VPN access requires multi-factor authentication.
+Users should reset VPN credentials through the self-service portal.
+VPN sessions automatically expire after 12 hours.
